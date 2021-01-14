@@ -4,10 +4,12 @@ import './App.css';
 import Cards from './components/Cards.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import data, { Cairns } from './data.js';
+import Nav from './components/Nav'
 
 function App() {
   return (
     <div className="App">
+      <Nav/>
       <div>
         <SearchBar
           onSearch={(ciudad) => alert(ciudad)}
