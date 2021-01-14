@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s3 from '../css/search.module.css'
 
-export default function SearchBar(props) {
-  // acá va tu código
-  return <div >
-    <input  type= "text" placeholder={"Ciudad..."}></input>
-    <button className ={s3.search} onClick = {() => props.onSearch("Buscando...")}> Buscar </button>
-  </div>
-};
+export default function SearchBar({onSearch}) {
+  
+ const [city,setCity] = useState("")
+  return(
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      onSearch(city);
+      setCity("");
+    }}>
+      <input
+        type="text"
+        placeholder="Ciudad..."
+        value={city}
+        onChange={e => setCity(e.target.value)}
+        />
+      <input type="submit" value="Agregar" />
+    </form>
+  )};
