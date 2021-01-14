@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/climas_app/static/css/main.8eafa14c.chunk.css",
-    "main.js": "/climas_app/static/js/main.3be4b0b5.chunk.js",
-    "main.js.map": "/climas_app/static/js/main.3be4b0b5.chunk.js.map",
+    "main.js": "/climas_app/static/js/main.24e48e35.chunk.js",
+    "main.js.map": "/climas_app/static/js/main.24e48e35.chunk.js.map",
     "runtime-main.js": "/climas_app/static/js/runtime-main.0f48acd3.js",
     "runtime-main.js.map": "/climas_app/static/js/runtime-main.0f48acd3.js.map",
     "static/js/2.fd32279e.chunk.js": "/climas_app/static/js/2.fd32279e.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0f48acd3.js",
     "static/js/2.fd32279e.chunk.js",
     "static/css/main.8eafa14c.chunk.css",
-    "static/js/main.3be4b0b5.chunk.js"
+    "static/js/main.24e48e35.chunk.js"
   ]
 }
