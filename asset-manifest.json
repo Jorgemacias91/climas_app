@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/climas_app/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/climas_app/static/js/main.de8653d5.chunk.js",
-    "main.js.map": "/climas_app/static/js/main.de8653d5.chunk.js.map",
-    "runtime-main.js": "/climas_app/static/js/runtime-main.0de7ea53.js",
-    "runtime-main.js.map": "/climas_app/static/js/runtime-main.0de7ea53.js.map",
-    "static/js/2.c454d5f0.chunk.js": "/climas_app/static/js/2.c454d5f0.chunk.js",
-    "static/js/2.c454d5f0.chunk.js.map": "/climas_app/static/js/2.c454d5f0.chunk.js.map",
-    "static/js/3.0b4ff282.chunk.js": "/climas_app/static/js/3.0b4ff282.chunk.js",
-    "static/js/3.0b4ff282.chunk.js.map": "/climas_app/static/js/3.0b4ff282.chunk.js.map",
+    "main.css": "/climas_app/static/css/main.8eafa14c.chunk.css",
+    "main.js": "/climas_app/static/js/main.3be4b0b5.chunk.js",
+    "main.js.map": "/climas_app/static/js/main.3be4b0b5.chunk.js.map",
+    "runtime-main.js": "/climas_app/static/js/runtime-main.0f48acd3.js",
+    "runtime-main.js.map": "/climas_app/static/js/runtime-main.0f48acd3.js.map",
+    "static/js/2.fd32279e.chunk.js": "/climas_app/static/js/2.fd32279e.chunk.js",
+    "static/js/2.fd32279e.chunk.js.map": "/climas_app/static/js/2.fd32279e.chunk.js.map",
+    "static/js/3.dbb4de3c.chunk.js": "/climas_app/static/js/3.dbb4de3c.chunk.js",
+    "static/js/3.dbb4de3c.chunk.js.map": "/climas_app/static/js/3.dbb4de3c.chunk.js.map",
     "index.html": "/climas_app/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/climas_app/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.c454d5f0.chunk.js.LICENSE.txt": "/climas_app/static/js/2.c454d5f0.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/climas_app/static/media/logo.6ce24c58.svg"
+    "static/css/main.8eafa14c.chunk.css.map": "/climas_app/static/css/main.8eafa14c.chunk.css.map",
+    "static/js/2.fd32279e.chunk.js.LICENSE.txt": "/climas_app/static/js/2.fd32279e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0de7ea53.js",
-    "static/js/2.c454d5f0.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.de8653d5.chunk.js"
+    "static/js/runtime-main.0f48acd3.js",
+    "static/js/2.fd32279e.chunk.js",
+    "static/css/main.8eafa14c.chunk.css",
+    "static/js/main.3be4b0b5.chunk.js"
   ]
 }
