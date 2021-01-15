@@ -3,8 +3,9 @@ import './App.css';
 import Cards from './components/Cards.jsx';
 import data, { Cairns } from './data.js';
 import Nav from './components/Nav';
-
-
+import About from './components/About'
+import {Route} from 'react-router-dom';
+import Datos from './components/Datos'
 function App() {
 
   const [cities, setCities] = useState([]);
@@ -42,11 +43,37 @@ function App() {
     )
   }
 
+  function onFilter(ciudadId){
+    let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
+    if(ciudad.length>0){
+      return ciudad[0]
+    }else{
+      return null;
+    }
+  }
+
   return (
     <div className="App">
-      <Nav onSearch = {onSearch}/>        
-      <Cards cities={cities} onClose={Delete}/>
+      <Route
+      path="/"
+      render={()=> <Nav onSearch = {onSearch}/>}
+      />
 
+      <Route
+      path="/"
+      exact
+      render={()=> <Cards cities={cities} onClose={Delete}/>}
+      />
+      
+      <Route 
+      path="/About"
+      component={About}
+      />
+
+      <Route
+      path="/datos/:datosId"
+      render ={({match}) => <Datos city={onFilter(match.params.datosId)}/>}
+      />
     </div>
   );
 }

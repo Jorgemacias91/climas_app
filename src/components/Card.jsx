@@ -1,5 +1,6 @@
 import React from 'react';
 import s1 from '../css/card.module.css'
+import {Link} from 'react-router-dom';
 
 export default function Card(props) {
   // acá va tu código
@@ -8,7 +9,9 @@ export default function Card(props) {
 <div className={s1.contenedor}>
 
     <div className = {s1.encabezado}>
+      <Link to={`/datos/${props.id}`}>
       <h3 className ={s1.name}>{props.name}</h3>
+      </Link>
       <button className={s1.btnx} onClick = {props.onClose}>X</button>
     </div>
     
