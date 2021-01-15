@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
 import './App.css';
 import Cards from './components/Cards.jsx';
-import data, { Cairns } from './data.js';
 import Nav from './components/Nav';
 import About from './components/About'
 import {Route} from 'react-router-dom';
 import Datos from './components/Datos'
-//console.log(process.env.REACT_APP_AUTH_TOKEN);
+
 function App() {
 
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad){
     const apiKey = process.env.REACT_APP_AUTH_TOKEN;
+    
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
