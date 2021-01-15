@@ -6,12 +6,13 @@ import Nav from './components/Nav';
 import About from './components/About'
 import {Route} from 'react-router-dom';
 import Datos from './components/Datos'
+//console.log(process.env.REACT_APP_AUTH_TOKEN);
 function App() {
 
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad){
-    const apiKey = 'f8e75b78041343b7fa4e6050533c0068';
+    const apiKey = process.env.REACT_APP_AUTH_TOKEN;
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
