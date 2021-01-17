@@ -1,30 +1,22 @@
 import React from 'react';
 import SearchBar from '../components/SearchBar'
 import {Link} from 'react-router-dom';
+import style from '../css/nav.module.css'
 
-function Nav({onSearch}){
+function Nav(){
     return(
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
 
-    <div className="container-fluid">
-        <Link to="/"><span>App Climas</span></Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-            <Link to="/About"><span>About</span></Link>
-            </li>
-           </ul>
-           <SearchBar
-          onSearch={onSearch}
-        />
-    </div>
-  </div>
-</nav>
+        
+        <nav className="navbar navbar-dark bg-dark">
+                <Link to="/"><h3><span className={style.nav}>Climas App</span></h3></Link>
+                
+                <div>
+                    <Link to="/About"><h3><span className={style.nav}>Datos</span></h3></Link>
+               </div>
+        </nav>
+
+        
     )
 }
-
 export default Nav;
 

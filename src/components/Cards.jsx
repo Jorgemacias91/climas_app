@@ -2,10 +2,11 @@
 import React from 'react';
 import Card from './Card';
 import s2 from '../css/cards.module.css';
+
 export default function Cards({cities, onClose}) {
   if(cities){
     return (
-      <div className={s2.padre}>
+      <div>
         {cities.map(c => <Card
             key={c.id}
             max={c.max}

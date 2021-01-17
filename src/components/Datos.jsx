@@ -5,8 +5,8 @@ export default function Datos({city}){
 return(
     <>
     <div className="container">
-                    <h2>{city.name}</h2>
-                    <div className="info">
+                    <h2 className="text-white">{city.name}</h2>
+                    <div className="text-white">
                         <div>Temperatura: {city.temp} ºC</div>
                         <div>Clima: {city.weather}</div>
                         <div>Viento: {city.wind} km/h</div>

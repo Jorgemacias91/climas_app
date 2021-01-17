@@ -4,15 +4,17 @@ import Cards from './components/Cards.jsx';
 import Nav from './components/Nav';
 import About from './components/About'
 import {Route} from 'react-router-dom';
-import Datos from './components/Datos'
+import Datos from './components/Datos';
 
+import SearchBar from './components/SearchBar'
+//console.log(process.env.REACT_APP_AUTH_TOKEN)
 function App() {
 
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad){
-    const apiKey = process.env.REACT_APP_AUTH_TOKEN;
-    
+    const apiKey = 'f8e75b78041343b7fa4e6050533c0068';
+    console.log(apiKey)
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
@@ -55,26 +57,42 @@ function App() {
 
   return (
     <div className="App">
-      <Route
-      path="/"
-      render={()=> <Nav onSearch = {onSearch}/>}
-      />
 
-      <Route
-      path="/"
-      exact
-      render={()=> <Cards cities={cities} onClose={Delete}/>}
-      />
+        <Route
+            path="/"
+            component ={Nav}
+        />
+       <div className="container">
+          <div className="row mt-4">
+           <div className="col-md-4">
+           <Route className="card-body"
+           path="/"
+           exact
+           render={()=> <SearchBar onSearch={onSearch}/>}
+           />
+           </div>
+
+           <div className="col-md-8">
+           <Route
+            path="/"
+            exact
+            render={()=> <Cards cities={cities} onClose={Delete}/>}
+           />
+          </div>
+        
+        </div>
+        </div>
       
-      <Route 
-      path="/About"
-      component={About}
-      />
+          <Route 
+            path="/About"
+            component={About}
+         />
 
-      <Route
-      path="/datos/:datosId"
-      render ={({match}) => <Datos city={onFilter(match.params.datosId)}/>}
-      />
+        <Route
+            path="/datos/:datosId"
+            render ={({match}) => <Datos city={onFilter(match.params.datosId)}/>}
+        />
+      
     </div>
   );
 }
