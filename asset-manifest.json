@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/climas_app/static/css/main.8f63d6ea.chunk.css",
-    "main.js": "/climas_app/static/js/main.b0d33ab8.chunk.js",
-    "main.js.map": "/climas_app/static/js/main.b0d33ab8.chunk.js.map",
-    "runtime-main.js": "/climas_app/static/js/runtime-main.40e74c21.js",
-    "runtime-main.js.map": "/climas_app/static/js/runtime-main.40e74c21.js.map",
-    "static/js/2.6b0e45f3.chunk.js": "/climas_app/static/js/2.6b0e45f3.chunk.js",
-    "static/js/2.6b0e45f3.chunk.js.map": "/climas_app/static/js/2.6b0e45f3.chunk.js.map",
-    "static/js/3.c5c2ee67.chunk.js": "/climas_app/static/js/3.c5c2ee67.chunk.js",
-    "static/js/3.c5c2ee67.chunk.js.map": "/climas_app/static/js/3.c5c2ee67.chunk.js.map",
+    "main.css": "/climas_app/static/css/main.3c882c8e.chunk.css",
+    "main.js": "/climas_app/static/js/main.30d9e818.chunk.js",
+    "main.js.map": "/climas_app/static/js/main.30d9e818.chunk.js.map",
+    "runtime-main.js": "/climas_app/static/js/runtime-main.0e5f9be2.js",
+    "runtime-main.js.map": "/climas_app/static/js/runtime-main.0e5f9be2.js.map",
+    "static/js/2.a41119fe.chunk.js": "/climas_app/static/js/2.a41119fe.chunk.js",
+    "static/js/2.a41119fe.chunk.js.map": "/climas_app/static/js/2.a41119fe.chunk.js.map",
+    "static/js/3.821cfd02.chunk.js": "/climas_app/static/js/3.821cfd02.chunk.js",
+    "static/js/3.821cfd02.chunk.js.map": "/climas_app/static/js/3.821cfd02.chunk.js.map",
     "index.html": "/climas_app/index.html",
-    "static/css/main.8f63d6ea.chunk.css.map": "/climas_app/static/css/main.8f63d6ea.chunk.css.map",
-    "static/js/2.6b0e45f3.chunk.js.LICENSE.txt": "/climas_app/static/js/2.6b0e45f3.chunk.js.LICENSE.txt"
+    "static/css/main.3c882c8e.chunk.css.map": "/climas_app/static/css/main.3c882c8e.chunk.css.map",
+    "static/js/2.a41119fe.chunk.js.LICENSE.txt": "/climas_app/static/js/2.a41119fe.chunk.js.LICENSE.txt",
+    "static/media/clima.a9a746ab.jpg": "/climas_app/static/media/clima.a9a746ab.jpg",
+    "static/media/logo.6ce24c58.svg": "/climas_app/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.40e74c21.js",
-    "static/js/2.6b0e45f3.chunk.js",
-    "static/css/main.8f63d6ea.chunk.css",
-    "static/js/main.b0d33ab8.chunk.js"
+    "static/js/runtime-main.0e5f9be2.js",
+    "static/js/2.a41119fe.chunk.js",
+    "static/css/main.3c882c8e.chunk.css",
+    "static/js/main.30d9e818.chunk.js"
   ]
 }
