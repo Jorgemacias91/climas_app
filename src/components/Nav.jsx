@@ -8,7 +8,7 @@ function Nav(){
 
         
         <nav className="navbar navbar-dark bg-dark">
-                <Link to="/"><h3><span className={style.nav}>Climas App</span></h3></Link>
+                <Link to="/climas_app"><h3><span className={style.nav}>Climas App</span></h3></Link>
                 
                 <div>
                     <Link to="/About"><h3><span className={style.nav}>Info</span></h3></Link>

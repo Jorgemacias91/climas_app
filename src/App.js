@@ -73,7 +73,7 @@ function App() {
           <div className="row mt-4">
            <div className="col-md-4">
            <Route className="card-body"
-           path="/"
+           path="/climas_app"
            exact
            render={()=> <SearchBar onSearch={onSearch}/>}
            />
@@ -81,7 +81,7 @@ function App() {
 
            <div className="col-md-8">
            <Route
-            path="/"
+            path="/climas_app"
             exact
             render={()=> <Cards cities={cities} onClose={Delete}/>}
            />
