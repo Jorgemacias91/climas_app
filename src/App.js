@@ -7,14 +7,14 @@ import {Route} from 'react-router-dom';
 import Datos from './components/Datos';
 
 import SearchBar from './components/SearchBar'
-//console.log(process.env.REACT_APP_AUTH_TOKEN)
+console.log(process.env.REACT_APP_AUTH_TOKEN)
 function App() {
 
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad){
     const apiKey = 'f8e75b78041343b7fa4e6050533c0068';
-    console.log(apiKey)
+    
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
@@ -32,8 +32,13 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon
           };
+          const cityExist = cities.filter(city => city.id === ciudad.id)
+          console.log(cityExist);
+          if(cityExist.length > 0){
+            alert("Este lugar ya está en la pantalla")
+          }else{
            setCities(oldCities => [...oldCities, ciudad]);
-          
+          }
         } else {
           alert("Ciudad no encontrada");
         }
@@ -42,8 +47,10 @@ function App() {
   }
 
   function Delete(id){
+    if(window.confirm("Seguro que quiere eliminar el lugar seleccionado?")){
     setCities(cities.filter(city => city.id !== id)
     )
+    }
   }
 
   function onFilter(ciudadId){

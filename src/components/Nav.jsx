@@ -11,7 +11,7 @@ function Nav(){
                 <Link to="/"><h3><span className={style.nav}>Climas App</span></h3></Link>
                 
                 <div>
-                    <Link to="/About"><h3><span className={style.nav}>Datos</span></h3></Link>
+                    <Link to="/About"><h3><span className={style.nav}>Info</span></h3></Link>
                </div>
         </nav>
 

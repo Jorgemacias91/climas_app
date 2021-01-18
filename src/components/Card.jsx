@@ -6,9 +6,7 @@ export default function Card(props) {
   // acá va tu código
 
   return(
-    <>
-<div className="container">
-   <div className="row">
+
         <div className="col-md-4 mt-4">
           <div className="card">
 
@@ -22,25 +20,24 @@ export default function Card(props) {
             <div className="card-body" className={s1.temp}>
 
             <div >
-              <p>Min</p>
+              <p><strong>Min</strong></p>
               <p>{props.min}º</p>
             </div>
 
             <div>
-              <p>Max</p>
+              <p><strong>Max</strong></p>
               <p>{props.max}</p>
             </div>
 
             </div>
 
-            <div className="card-footer">
+            <div className="card-footer" className={s1.card}>
             <img src ={ `http://openweathermap.org/img/wn/${props.img}@2x.png`}/> 
             </div>
 
           </div>
         </div>  
-    </div>
-</div>
-</>
+    
+
   )
 };
