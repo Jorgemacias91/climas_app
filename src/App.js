@@ -12,7 +12,7 @@ function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad){
-    const apiKey = 'api reservada';
+    const apiKey = 'aquì debe ir la api key de weather';
     
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
